@@ -18,10 +18,7 @@ Repository = "https://github.com/Google-Health/cxr-foundation"
 Issues = "https://github.com/Google-Health/cxr-foundation/issues"
 
 [tool.hatch.metadata.hooks.requirements_txt]
-files = [
-    "clientside/requirements.txt",
-    "serving/requirements.txt"
-]
+files = ["requirements.txt"]
 
 [tool.hatch.build.targets.wheel]
 packages = [
