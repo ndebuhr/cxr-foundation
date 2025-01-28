@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cxr-foundation"
+version = "2.0.0"
+description = "Chest X-ray Foundation Models"
+authors = [
+    {name = "Google Health AI Developer Foundations Team"}
+]
+dynamic = ["dependencies"]
+
+[project.urls]
+Homepage = "https://developers.google.com/health-ai-developer-foundations"
+Documentation = "https://developers.google.com/health-ai-developer-foundations/overview"
+Repository = "https://github.com/Google-Health/cxr-foundation"
+Issues = "https://github.com/Google-Health/cxr-foundation/issues"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
