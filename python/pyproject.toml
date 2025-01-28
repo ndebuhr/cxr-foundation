@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=65.0"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "cxr-foundation"
@@ -17,8 +17,8 @@ Documentation = "https://developers.google.com/health-ai-developer-foundations/o
 Repository = "https://github.com/Google-Health/cxr-foundation"
 Issues = "https://github.com/Google-Health/cxr-foundation/issues"
 
-[tool.setuptools.dynamic]
-dependencies = {file = [
+[tool.hatch.metadata.hooks.requirements_txt]
+files = [
     "serving/requirements.txt",
-    "clientside/requirements.txt",
-]}
+    "clientside/requirements.txt"
+]
