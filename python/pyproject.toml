@@ -24,4 +24,9 @@ files = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["clientside", "data_processing", "serving"]
+packages = [
+    "clientside",
+    "data_processing",
+    "serving",
+    "serving/serving_framework"
+]
